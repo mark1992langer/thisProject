@@ -255,23 +255,23 @@ class Board extends JPanel implements ActionListener, MouseListener { //расш
                     g.setColor(new Color(10, 6, 6));
                 g.fillRect(2 + col * 40, 2 + row * 40, 40, 40);
 
-                //ресуем квадраты с это
+                //рисуем квадраты с это
                 switch (board.pieceAt(row, col)) {
                     case Data.player1:
-                        img = Toolkit.getDefaultToolkit().getImage("C:/Users/Марк/IdeaProjects/thisProject/это это1.jpg");
+                        img = Toolkit.getDefaultToolkit().getImage("src/thisGame/Pictures/это это1.jpg");
                         g.drawImage(img, 3 + col * 40, 3 + row * 40, this);
                         break;
                     case Data.player2:
-                        img = Toolkit.getDefaultToolkit().getImage("C:/Users/Марк/IdeaProjects/thisProject/это это2.jpg");
+                        img = Toolkit.getDefaultToolkit().getImage("src/thisGame/Pictures/это это2.jpg");
                         g.drawImage(img, 3 + col * 40, 3 + row * 40, this);
                         break;
                     case Data.playerKing1:
-                        img = Toolkit.getDefaultToolkit().getImage("C:/Users/Марк/IdeaProjects/thisProject/это это1.jpg");
+                        img = Toolkit.getDefaultToolkit().getImage("src/thisGame/Pictures/это это1.jpg");
                         g.drawImage(img, 3 + col * 40, 3 + row * 40, this);
                         g.drawString("K", 27 + col * 40, 36 + row * 40);
                         break;
                     case Data.playerKing2:
-                        img = Toolkit.getDefaultToolkit().getImage("C:/Users/Марк/IdeaProjects/thisProject/это это2.jpg");
+                        img = Toolkit.getDefaultToolkit().getImage("src/thisGame/Pictures/это это2.jpg");
                         g.drawImage(img, 3 + col * 40, 3 + row * 40, this);
                         g.drawString("K", 27 + col * 40, 36 + row * 40);
                         break;
